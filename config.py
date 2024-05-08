@@ -1,7 +1,7 @@
-API_ID = 123456  # api id
-API_HASH = "ed44780dedd182084f2133b16944cf565"  # api hash
+API_ID = 28110971  # api id
+API_HASH = "21897f1f46ca83682cbb51bf0d660805"  # api hash
 
-BOT_TOKEN = "123456:ABC-DEF1234ghIkl-zyx57W2v1u123ew11"  # bot token
+BOT_TOKEN = "6814795964:AAGEW9EAIddnssjz1IxZIojd2Fm2cwDBXtg"  # bot token
 
 
 ## REDIS
@@ -9,6 +9,6 @@ HOST = "localhost"  # redis host uri
 PORT = 6379  # redis port
 PASSWORD = ""  # redis password
 
-PRIVATE_CHAT_ID = -1001234567890  # CHAT WHERE YOU WANT TO STORE VIDEOS
-COOKIE = ""  # COOKIE FOR AUTHENTICATION (get from chrome dev tools) ex: "PANWEB=1; csrfToken=; lang=en; TSID=; __bid_n=; _ga=; __stripe_mid=; ndus=; browserid==; ndut_fmt=; _ga_06ZNKL8C2E=" (don't use this)
-ADMINS = [1317173146]
+PRIVATE_CHAT_ID = -4259344262  # CHAT WHERE YOU WANT TO STORE VIDEOS
+COOKIE = "csrfToken=ghrNpVQu_hyerZLoeQ3s2C-I; browserid=hDUesi4Mks0KjECPimLel9ihy1JOOFG1yjrBkf5q12g7I7hFpqyBO9um2CQ=; lang=en; TSID=7mpFy5gi0w5DROAVY0NfUN35nt1R9W8r; __bid_n=18af01465ae731097b4207; _ga=GA1.1.248393557.1715159938; _ga_06ZNKL8C2E=GS1.1.1715159938.1.1.1715160079.60.0.0; _gcl_au=1.1.1278005278.1715160081; _fbp=fb.1.1715160082552.1767862929; ndut_fmt=FE485AC2CA572496A88C70AED7CD943C82A65036EDB79E3AD9E216C68515A2DA; ab_sr=1.0.1_ZThiZDVkM2E0YjFhNGU3NTE2NDE3NzQwNTA2NzA2NWNlY2NlMDFmMDZiZmRkN2M1Yjg5ZTEwNzBlYzZkNmRkNTViZjVjMzM3N2M5MWY3ZjM4MjdhNjZhMWRlYzU1MDNiMmJlMTc1MmE3YTRkMTE4ZDA5NjYzYTIwMmJjNzQyZjc4NGM5Nzg2MWM5OWExZmJjYmUyZTEwZDI1MTkyMWZmMA==; dom3ic8zudi28v8lr6fgphwffqoz0j6c=031d0b39-e1dc-4137-aa0c-656806befeed%3A3%3A1; _ga_RSNVN63CM3=GS1.1.1715160083.1.0.1715160157.60.0.0"  # COOKIE FOR AUTHENTICATION (get from chrome dev tools) ex: "PANWEB=1; csrfToken=; lang=en; TSID=; __bid_n=; _ga=; __stripe_mid=; ndus=; browserid==; ndut_fmt=; _ga_06ZNKL8C2E=" (don't use this)
+ADMINS = [696893276]
