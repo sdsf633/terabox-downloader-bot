@@ -45,15 +45,15 @@ async def start(m: UpdateNewMessage):
     reply_text = f"""
 Hello! I am a bot to download videos from terabox.
 Send me the terabox link and I will start downloading it.
-Join @RoldexVerse For Updates
+Join @tbx_server For Updates
 [Source Code](https://github.com/r0ld3x/terabox-downloader-bot) """
-    check_if = await is_user_on_chat(bot, "@RoldexVerse", m.peer_id)
+    check_if = await is_user_on_chat(bot, "@tbx_server", m.peer_id)
     if not check_if:
-        return await m.reply("Please join @RoldexVerse then send me the link again.")
-    check_if = await is_user_on_chat(bot, "@RoldexVerseChats", m.peer_id)
+        return await m.reply("Please join @tbx_server then send me the link again.")
+    check_if = await is_user_on_chat(bot, "@tbx_chats", m.peer_id)
     if not check_if:
         return await m.reply(
-            "Please join @RoldexVerseChats then send me the link again."
+            "Please join @tbx_chats then send me the link again."
         )
     await m.reply(reply_text, link_preview=False, parse_mode="markdown")
 
@@ -69,13 +69,13 @@ Join @RoldexVerse For Updates
 async def start(m: UpdateNewMessage):
     text = m.pattern_match.group(1)
     fileid = db.get(str(text))
-    check_if = await is_user_on_chat(bot, "@RoldexVerse", m.peer_id)
+    check_if = await is_user_on_chat(bot, "@tbx_server", m.peer_id)
     if not check_if:
-        return await m.reply("Please join @RoldexVerse then send me the link again.")
-    check_if = await is_user_on_chat(bot, "@RoldexVerseChats", m.peer_id)
+        return await m.reply("Please join @tbx_server then send me the link again.")
+    check_if = await is_user_on_chat(bot, "@tbx_chats", m.peer_id)
     if not check_if:
         return await m.reply(
-            "Please join @RoldexVerseChats then send me the link again."
+            "Please join @tbx_chats then send me the link again."
         )
     await bot(
         ForwardMessagesRequest(
@@ -126,13 +126,13 @@ async def handle_message(m: Message):
     url = get_urls_from_string(m.text)
     if not url:
         return await m.reply("Please enter a valid url.")
-    check_if = await is_user_on_chat(bot, "@RoldexVerse", m.peer_id)
+    check_if = await is_user_on_chat(bot, "@tbx_server", m.peer_id)
     if not check_if:
-        return await m.reply("Please join @RoldexVerse then send me the link again.")
-    check_if = await is_user_on_chat(bot, "@RoldexVerseChats", m.peer_id)
+        return await m.reply("Please join @tbx_server then send me the link again.")
+    check_if = await is_user_on_chat(bot, "@tbx_chats", m.peer_id)
     if not check_if:
         return await m.reply(
-            "Please join @RoldexVerseChats then send me the link again."
+            "Please join @tbx_chats then send me the link again."
         )
     is_spam = db.get(m.sender_id)
     if is_spam and m.sender_id not in [1317173146]:
@@ -239,7 +239,7 @@ File Name: `{data['file_name']}`
 Size: **{data["size"]}** 
 Direct Link: [Click Here](https://t.me/teraboxdown_bot?start={uuid})
 
-@RoldexVerse
+@tbx_server
 """,
             supports_streaming=True,
             spoiler=True,
@@ -263,7 +263,7 @@ File Name: `{data['file_name']}`
 Size: **{data["size"]}** 
 Direct Link: [Click Here](https://t.me/teraboxdown_bot?start={uuid})
 
-@RoldexVerse
+@tbx_server
 """,
             progress_callback=progress_bar,
             thumb=thumbnail if thumbnail else None,
